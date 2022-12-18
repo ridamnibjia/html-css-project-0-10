@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Orbitron';
+    font-size: 2.5rem;
+    margin: 1em 0;
+}
+h4 {
+    font-size: 1.1rem;
+    font-family: 'Poppins';
+    color: grey;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+p {
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+    margin: 0.7em 0;
+}
+
+img {
+    max-width: 100%;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5 rem;
+}
+nav>div>img{
+    width: 60%;
+}
+.list{
+    display: none;
+    list-style: none;
+    align-items: center;
+    gap: 1.5rem;
+}
+.button-group{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.search-icon>svg{
+    max-width: 20px;
+    padding-top: 0.4em;
+} 
+.nav-button{
+    padding: 0.1em 0.5em;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    border: 2px solid #000;
+    text-align: center;
+}
+.nav-button:hover,
+.nav-button:focus {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.hero-container>div{
+    order: -1;
+}
+.square{
+    display: none;
+}
+.hero-container-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    order: 5;
+    max-width: 550px;
+    margin: 0 auto;
+}
+.button-email,
+.button-join{
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Orbitron';
+    padding: 0.5em 1em;
+    margin-top: 1em;
+}
+.button-email{
+    color:grey;
+    background-color: #fff;
+    border: 2px solid black;
+    margin-right: 1em;
+}
+.button-join{
+    background-color: #000;
+    color: #fff;
+    padding: 0.6em 1.5em;
+    outline: none;
+    border: none !important;
+}
+.contact-heading{
+    color: grey;
+    margin: 2em 0;
+    font-size: 1.5rem;
+}
+.icons{
+    display: flex;
+    gap: 1.5em;
+}
+.star{
+    position: absolute;
+    bottom: 0;
+    width: 10%;
+    left: 0px;
+}
+.globe{
+    position: absolute;
+    bottom: 0;
+    width: 10%;
+    right: 0px;
+}
+.hero-container>span>img {
+    width: 70%;
+}
+@media (min-width: 700px)
+{
+    .list{
+        display: flex;
+        font-family: var(--font-2);
+        margin-right: 4em;
+        font-size: 1.2rem;
+    }
+    .hero-container{
+        flex-direction: row;
+    }
+    .hero-container-right{
+        width: 80%;
+    }
+    .globe{
+        right: 35%;
+        top: 5%;
+        width: 5%;
+    }
+    .star{
+        right: 5%;
+        top: 5%;
+        width: 5%;
+        left: unset;
+    }
+}
+@media (min-width:1000px)
+{
+    .container{
+        padding: 0 2em;
+        position: relative;
+    }
+    .hero-container{
+        padding-top: 4em;
+    }
+    .hero-container-right{
+        max-width: 800px;
+    }
+    .hero-container>div>img{
+        max-width: 350px;
+    }
+    .square{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        z-index: -1;
+    }
+}

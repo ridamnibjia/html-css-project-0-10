@@ -1,0 +1,151 @@
+*,*::after,*::before{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Red Rose';
+}
+body{
+    background-color: #2C2922;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    background: url(./assets/bg-img.webp) no-repeat;
+    width: 100vw;
+    background-size: 100% 40%;
+    height: 100vh;
+    background-position-y: 80%;
+}
+section{
+    padding: 1em;
+}
+img{
+    max-width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list{
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    color: #7e8078;
+    font-size: 1.3rem;
+}
+.list-item{
+    display: none;
+}
+.list-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    color: white;
+}
+.logo{
+    width: 50%;
+}
+.button-small{
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #6E6130;
+    border-radius: 5px;
+    padding: 0.5em 1.3em;
+    font-size: 0.7rem;
+    font-weight: bolder;
+}
+.button-small:hover{
+    color: #fff;
+    cursor: pointer;
+    background-color: #998107;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.top-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    max-width: 500px;
+}
+.hero-heading{
+    color: #fff;
+    font-size: 1.5rem;
+    padding-top: 1em;
+}
+.hero p{
+    color: #B8B2A7;
+    font-size: 1.2rem;
+}
+.bottom-container{
+    display: flex;
+    gap: 0.3em;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    justify-content: flex-end;
+}
+.arrow,.arrow2{
+width: 8%;
+background-color: #998107;
+}
+.arrow2{
+    transform: rotate(180deg);
+}
+.arrow:hover, .arrow2:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+@media (min-width: 1000px)
+{
+    .container{
+        background-size: 100% 45%;
+        padding: 0 1em;
+        background-position-y: 82%;
+    }
+    .logo{
+        width: 80%;
+    }
+    .list-item{
+        display: flex;
+        align-items: center;
+    }
+    .button-small{
+        margin-left: 4em;
+        font-size: 1.2rem;
+    }
+    .top-main{
+        flex-direction: row;
+        max-width: unset;
+        padding-top: 2em;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 2em;
+    }
+    .hero-heading{
+        font-size: 2rem;
+        padding: unset;
+        max-width: 40%;
+    }
+    .top-main p{
+        max-width: 30%;
+        font-size: 1.2rem;
+    }   
+}
+@media (min-width: 1200px)
+{
+    .hero-heading{
+        font-size: 3rem;
+        max-width: 40%;
+    }
+    .top-main p{
+        font-size: 1.5rem;
+        max-width: 30%;
+    }
+}
+

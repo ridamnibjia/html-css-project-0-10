@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.main-div {
+    display: flex;
+    flex-direction: column;
+    background: url("../images/backcover.svg") no-repeat;
+    background-position: right;
+    background-size: 50% 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    align-items: center;
+}
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    font-size: 1.2rem;
+}
+.signin-btn{
+    background:  linear-gradient(to right, #965CF2 0%, #FF8ADC 100%);
+    border-radius: 26px;
+    padding: 0.5em 2em;
+    outline: none;
+    color: #fff;
+    border: none;
+}
+.intro-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-section{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.left-section h1 {
+    font-size: 3.5em;
+    color: #3E4794;
+}
+.left-section h4{
+    font-size: 1.3em;
+    color: #6F7392;
+    line-height: 1.5;
+}
+.learn-more-btn{
+    background:  linear-gradient(to right, #965CF2 0%, #FF8ADC 100%);
+    padding: 1em 2em;
+    border-radius: 45px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+.imgs-div{
+    display: flex;
+    width: 50%;
+    align-items: flex-end;
+}
+.vectors{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 10%;
+    justify-content: flex-start;
+    height: 10%;
+    position: relative;
+    padding-bottom: 8em;
+}
+.vector-dot{
+    width: 25%;
+    align-self: flex-end;
+    position: absolute;
+    top: 0;
+    right: 18px;
+}
+.intro-img {
+    width: 70%;
+    height: 60%;
+}
+@media (max-width:800px) {
+    .nav-items {
+        display: none;
+    }
+    nav {
+        width: 100%;
+    }
+    .main-div {
+        background-size: 55% 120%;
+    }
+}
+@media (max-width: 1300px)
+{
+    .left-section {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:650px) {
+    .main-div {
+        background: unset;
+        padding: 2em 0;
+    }
+    .intro-section {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 3em 0;
+        gap: 1em;
+    }
+    .left-section {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8em;
+        gap: 1em;
+    }
+    .vectors {
+        display: none;
+    }
+    .imgs-div {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro-img {
+        width: 40%;
+    }
+}

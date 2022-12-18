@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  font-size: 16px;
+  overflow-x: hidden; 
+}
+
+body {
+  background-color: #F5F5F5;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #3400FF;
+  padding: 3em;
+}
+nav{
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  gap: 2em;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+}
+.nav-item{
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.nav-item-active{
+  background-color: white;
+  border-radius:10px;
+  color: #8356ef;
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+nav>svg{
+  width: 20px;
+  height: 20px;
+}
+.hero-section{
+  display: flex;
+  background-color: #3400FF;
+  color: #fff;
+  width: 100%;
+  padding: 2em 0em 2em 2em;
+  justify-content: space-between;
+  margin-bottom: 4em;
+  height: 30ch;
+}
+.hero-text img{
+  width: 10%;
+}
+.hero-text h2{
+  font-size: 2rem;
+  color: #fff;
+}
+.hero-text p{
+  font-size: 1rem;
+  color: #fff;
+}
+.header-image{
+  width: 37%;
+  height: 40ch
+}
+.companies{
+  display: flex;
+  justify-content: flex-start;
+  gap: 3em;
+  width: 65%;
+  padding: 1em 2em;
+  margin: 4em 0;
+}
+.company-items{
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+  font-family: 'Righteous';
+  font-size: 1.3rem;
+}
+@media (max-width: 850px)
+{
+   header{
+    width: 100%;
+    padding: 1em 2em;
+   }
+   .nav-item{
+    display: none;
+   }
+   .nav svg{
+    display: block;
+   }
+   .hero-section{
+    flex-direction: column;
+    width: 100%;
+    gap: 2em;
+    height: unset;
+   }
+   .hero-text{
+    width: 100%;
+   }
+   .hero-text h2{
+    font-size: 1.5rem;
+   }
+   .header-image{
+    order: -1;
+    width: 50%;
+    height: unset;
+   }
+   header svg{
+    display: none;
+   }
+   .companies{
+    width: 100%;
+    justify-content: center;
+   }
+}
+.api{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #fff;
+  padding: 2em;
+  gap: 2em;
+  margin: 5em 0;
+}
+.api-heading {
+  font-size: 2rem;
+}
+.cards{
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-start;
+}
+.card-active {
+  box-shadow: 0 2px 20px #000000;
+}
+.card{
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+}
+.card-head-active {
+  color: #5A31FC;
+}
+.card-logo{
+  width:20%
+}
+
+
+@media (max-width:800px){
+
+  .api-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+.blog-heading{
+  font-size: 1rem;
+}
+.blog-cards{
+  display: flex;
+  gap: 2em;
+  width:100%;
+  justify-content: space-between;
+}
+.blog-card{
+  border-top-left-radius: 55px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 50%;
+  box-shadow: 0 2px 15px black;
+  background-color: #F5F5F5;
+  padding: 0em 1em 0em 0em;
+}
+.blog-image{
+  
+  height: 100%;
+  background-size: 100% 100%;
+  background-position: cover;
+  width: 100%;
+}
+
+.blog-image img{
+  display: none;
+}
+
+.blog-image1{
+  background: url("./images/Rectangle.png") no-repeat;
+}
+
+.blog-image2{
+  background: url("./images/RectangleCopy.png") no-repeat;
+}
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  padding-left: 1em;
+}
+
+.blog-content h6{
+font-size: 0.7rem;
+}
+
+.blog-bottom{
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  flex-direction: row-reverse;
+}
+@media (max-width: 1350px)
+{
+  .blog-cards{
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .blog-card{
+    gap: 2em;
+    padding: 0;
+    border-top-left-radius: 105px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .blog-bottom{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .blog-image{
+    all:unset;
+  }
+  .blog-image img{
+    display: flex;
+    width: 100%;
+  }
+}
+@media (max-width: 850px){
+  .blog-card{
+    flex-direction: column;
+  }
+  .blog-cards h1,h2,h3,p{
+    font-size: large;
+  }
+}
+
